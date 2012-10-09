@@ -31,17 +31,20 @@ Tips:
 Example: 
   1. Simple invoke: $('form').form_cookie_store()
   2. Custom invoke: 
-     $('form#proposal_form').form_cookie_store({
-       note_position: {
-         auto_save_note: {
-           add_type: 'appendTo', 
-           rel_node: '#some_id'
-          }
-         restore_data_note: {
-           add_type: 'insertBefore', 
-           rel_node: "#some_id"
-          }
-        }, 
-        save_interval: 10000, 
-        without_cache: ".class_selector,#id_selector"
-     )
+     <pre><code>
+       $('form#proposal_form').form_cookie_store({
+         note_position: {
+           auto_save_note: {
+            add_type: 'appendTo', 
+            rel_node: '#some_id'
+           },
+           restore_data_note: {
+             add_type: 'insertBefore', 
+             rel_node: "#some_id"
+           }
+         }, 
+          save_interval: 10000, 
+          without_cache: ".class_selector,#id_selector"
+       )
+       </code></pre>
+
