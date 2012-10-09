@@ -11,9 +11,13 @@ Email: wrymax@qq.com
 依赖$.cookie插件
 Tips:
   1. 关于保存提示：
+     <br/>
      1) 如果自己在表单中添加了.auto_save_note和restore_data_note, 插件不会另行添加, 会直接使用用户自定义位置的auto_save_note和restore_data_note
+     <br/>
      2) 否则JS将在表单前插入一个.restore_data_note, 在表单尾部插入一个.auto_save_note
+     <br/>
      3) 提示的html格式:
+     <br/>
         <div class="restore_data_note">
           系统有一些暂存的数据, 需要恢复吗?
           <a href='#' class='restore_data'>恢复</a>
