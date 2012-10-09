@@ -1,0 +1,31 @@
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<script type="text/javascript" src="../jquery-1.7.1.min.js"> </script>
+		<script type="text/javascript" src="../jquery.cookies.js"> </script>
+		<script type="text/javascript" src="../jquery.form_cookie_store.js"> </script>
+		<script type="text/javascript">
+			$(function(){
+				// This only works on the site with domain name
+				// Or cookie cannot be saved
+				// This is the simplest invoke pattern
+				// See more config info in jquery.form_cookie_store.js
+				$('form#test_form').form_cookie_store();
+			})
+		</script>
+	</head>
+	<body>
+		<form id="test_form" action="#" method="get">
+			<label for="name">Name: </label>
+			<input id="name" name="name" />
+			<br/>
+			<label for="age">Age: </label>
+			<input id="age" name="age" />
+			<br/>
+			<label for="gender">Gender: </label>
+			<input id="gender" name="gender" />
+			<br/>
+			<input type="submit" value="submit" />
+		</form>
+	</body>
+</html>
